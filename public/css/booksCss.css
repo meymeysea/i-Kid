@@ -1,0 +1,40 @@
+        #headerbook {
+            background-image: url("../books/book _covers.png");
+    		background-size: cover;
+    		height: 480px;
+    		justify-content: center;
+    		align-items: center;
+    		display: flex;
+            margin-top: -100px;
+
+    	}
+    	body{
+    		margin: 0px;
+    	}
+
+    	#text{
+    		text-align: center;
+    		font-family: Gill Sans MT,sans-serif;
+    		color: black;
+    		width: 780px;
+    		background-color: yellow;
+    		
+
+    
+    	}
+    	#pic{
+    		text-align: center;
+    		margin-top: -50px;
+
+    	}
+    	#size{
+    		border-radius: 100%
+
+    	}
+    	#tips{
+    		height: 300px;
+    	}
+    	#bcover{
+    		text-align: center;
+    		padding: 20px;
+    	}

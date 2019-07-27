@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>i-Kid</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -22,8 +23,10 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
+    <link href="{{asset('css/style5.css')}}" rel="stylesheet">
     <link href="{{asset('css/agency.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/agency.css')}}" rel="stylesheet">
+    <link href="{{asset('css/booksCss.css')}}" rel="stylesheet">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -62,15 +65,11 @@
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
+                   
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+                    
 
                     <!-- log in register -->
 
@@ -78,7 +77,7 @@
                              @if (Route::has('login'))
                         
                             @auth
-                                <a href="{{ url('/home') }}">Home</a>
+                                <a href="{{ url('/home') }}">Profile</a>
                             @else
                                 <a href="{{ route('login') }}">Login</a>
 
@@ -120,25 +119,25 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
+
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <img src="img/vocabulary1.png" class="img-responsive" alt="">
+                        <!-- <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
                     </span>
                     <h4 class="service-heading">Vocabularies</h4>
                     <p class="text-muted">Check out the our vocabulaires in English and Japanese.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <img src="img/library1.png" class="img-responsive" alt="">
                     </span>
                     <h4 class="service-heading">Books</h4>
                     <p class="text-muted">Given you the top selling books for download. Many to choose from and enjoy the reading.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <img src="img/jigsaw1.png" class="img-responsive" alt="">
                     </span>
                     <h4 class="service-heading">Games</h4>
                     <p class="text-muted">There is flashcard game and picture dictionary for kids to play. Have fun and learn at the same time!</p>
@@ -181,7 +180,7 @@
                         <img src="img/portfolio/quiz.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Do quiz</h4>
+                        <h4>PLay game</h4>
                         <p class="text-muted">Review what you have learnt</p>
                     </div>
                 </div>
@@ -205,85 +204,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Team Section -->
     <section id="team" class="bg-light-gray">
@@ -295,7 +216,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4" style="justify-content: center;">
+                <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/5.jpg" class="img-responsive img-circle" alt="">
                         <h4>Sea Meymey</h4>
@@ -330,7 +251,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">We are from NIPTICT and we will give kids their own website.</p>
+                    <p class="large text-muted">We are year two student who dedicated ourselves to make kids feel at ease to learn.</p>
                 </div>
             </div>
         </div>
@@ -339,78 +260,7 @@
    
 
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2019</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
@@ -418,33 +268,51 @@
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" saria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
+               
+
+                <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+                  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                  <button class="tablinks" onclick="openCity(event, '')">Paris</button>
+                  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <p>
-                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                                <ul class="list-inline">
-                                    <li>Date: July 2014</li>
-                                    <li>Client: Round Icons</li>
-                                    <li>Category: Graphic Design</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
+
+                <div id="London" class="tabcontent">
+                  <h3>London</h3>
+                  <p>London is the capital city of England.</p>
                 </div>
+
+                <div id="Paris" class="tabcontent">
+                  <h3>Paris</h3>
+                  <p>Paris is the capital of France.</p> 
+                </div>
+
+                <div id="Tokyo" class="tabcontent">
+                  <h3>Tokyo</h3>
+                  <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <script>
+                function openCity(evt, cityName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(cityName).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+                </script>
+
+                 
             </div>
         </div>
     </div>
@@ -453,26 +321,8 @@
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Project Heading</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.jpg" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+                
             </div>
         </div>
     </div>
@@ -481,27 +331,69 @@
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.jpg" alt="">
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
+            <div id="headerbook">
+
+                <div id="text">
+                    <h1>Book Center</h1>
+                </div>  
+            </div>
+            <div id="pic"><img src="books/welcome.jpg" height="120px" width="300px">
+                <h3 style="font-family: lena">Book Collection</h3>
+                <hr align="center" width="170">
+                <br><i>Provide you with the latest epub books for<br> download and ENJOY READING!!</i>
+            </div>
+            <br>
+            <div id="bcover">
+                <a href="books/Jenny_Han_-_To_All_The_Boys_I_39_ve_Loved_Before_Book_1.epub" download>
+                    <img src="books/cover-1.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20" >
+                </a>
+                <a href="books/Jenny_Han_-_P_S_I_Still_Love_You_Book_2.epub" download>
+                    <img src="books/cover0.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20" >
+                </a>
+                <a href="books/Always_and_Forever_Lara_Jean_-_Jenny_Han.epub" download>
+                    <img src="books/cover1.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20" >
+                </a>
+                <a href="books/Everything, Everything - Nicola Yoon.epub" download>
+                    <img src="books/cover2.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20" border="1" style="border-color: black">
+                </a>
+                <a href="books/The Sun Is Also a Star - Nicola Yoon.epub" download>
+                    <img src="books/cover3.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20">
+                </a>
+                <a href="books/5th Wave, The - Rick Yancey.epub" download> 
+                    <img src="books/cover4.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20">
+                </a>
+                <a href="books/Infinite Sea, The - Rick Yancey.epub" download> 
+                    <img src="books/cover5.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20">
+                </a>
+                <a href="books/Last Star, The - Rick Yancey.epub" download>
+                    <img src="books/cover6.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20">
+                </a>
+                <a href="books/Holding Up the Universe - Jennifer Niven.epub" download>
+                    <img src="books/cover7.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20">
+                </a>
+                <a href="books/All the Bright Places - Jennifer Niven.epub" download>
+                    <img src="books/cover8.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20">
+                </a>
+                <a href="books/Dreamology - Lucy Keating.epub" download>
+                    <img src="books/cover9.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20">
+                </a>
+                <a href="books/Crooked Kingdom - Leigh Bardugo.epub" download>
+                    <img src="books/cover10.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20">
+                </a>
+                <a href="books/Did I Mention I Miss You_ - Estelle Maskame.epub" download>
+                    <img src="books/cover11.jpg" alt="Always" width="200" height="260" hspace="30" vspace="20">
+                </a>
+                <br>
+                <hr align="center" width="500">
+                <h2 style="font-family: lena" align="center">More to be added soon.<br>Stay Tuneee!!!</h2>
+            <br><br><br>
+                
+            </div>
+
+
+
+
             </div>
         </div>
     </div>
@@ -571,6 +463,9 @@
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
                         <div class="rl">
+
+                            <button>hello</button>
+
                         </div>
                     </div>
                 </div>

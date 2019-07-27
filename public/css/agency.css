@@ -51,6 +51,7 @@ h6 {
 }
 .bg-light-gray {
   background-color: #eeeeee;
+  
 }
 .bg-darkest-gray {
   background-color: #222222;
@@ -228,7 +229,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/kid.jpg');
+  background-image: url('../img/child.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -539,6 +540,7 @@ section h3.section-subheading {
 .team-member {
   text-align: center;
   margin-bottom: 50px;
+
 }
 .team-member img {
   margin: 0 auto;
